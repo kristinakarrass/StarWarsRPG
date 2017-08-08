@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>Star Wars RPS Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="https://code.jquery.com/jquery.js"></script>
+<html lang="en-us">
 
-</head>
-<body>
-	<div class="header">
-		<h1>Star Wars RPG</h1>
-	</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Wars with jQuery!</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<!-- Game Logic -->
+		<script type="text/javascript" src="assets/javascript/rpgStarWars.js"></script>
+	</head>
 
-	<div class="you">
-	<h1>Your Character</h1>
-	</div>	
+	<body>
 
-	<div class="players"></div>
-	
-	<div class="enemies">
-	<h1>Enemies Available to Attack</h1>
-	</div>
+		<div class="main-section-title">Star Wars RPG!</div>
+		<div id="main-game-section">
+			<!-- Where the characters are initially available to be selected. -->
+			<div id="characters-section">
+				<div class="section-title">Select Your Character</div>
+			</div>
+			
+			<!-- Section for our selected character. -->
+			<div id="selected-character-section">
+				<div class="section-title">Your Character</div>
+				<!-- Where our selected character will appear. -->
+				<div id="selected-character"></div>
+			</div>
 
-	<div class="fight">
-		<h1>Fight Section</h1>
-	</div>
-	
-	<div class="opponents"></div>
-	<button class="attack">Attack</button>
+			<!-- Where our enemies available to attack will appear. -->
+			<div id="available-to-attack-section">
+				<div class="section-title">Enemies Available To Attack</div>
+			</div>
 
-	<div class="fight">
-	<h1>Defender</h1>
-	</div>
+			<div class="section-title">Fight Section</div>
+			<div id="fight-section">
+				<button id="attack-button">Attack</button>
+			</div>
 
-	<div class="defender"></div>
+			<div id="action">
+				<div class="character-section">
+					<div class="section-title">Defender</div>
+					<!-- Where our defender will appear. -->
+					<div id="defender"></div>
+				</div>
+			</div>
 
-	<h3 class="message"></h3>
-	
-<!-- 	<button class="restart">Restart</button>
- -->
+		</div>
+		<!-- Area for game messages. -->
+		<div id="game-message"></div>
+	</body>
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
 </html>

@@ -1,45 +1,97 @@
 body {
-	font-size: 20px;
-	font-weight: 700;
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  color: lightgray;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-html {
-	background: url("../images/background.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 200%;
+}
+
+.main-section-title {
+  font-size: 300%;
+  text-align: right;
 }
 
 .character {
-	width: 250px;
-	height: 170px;
-	border: 2px solid green;
-	float: left;
-	margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  border-color: green;
+  border-style: solid;
+  border-width: 3px;
+  color: black;
 }
 
-.players {
- 	height: 200px;
- }
-
-.attack, .restart {
-	font-size: 20px;
-	color: black;
-	border: 1px solid black;
-	width: 100px;
+.character-image {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
-.header {
-	text-align: right;
-	color: #dddddd;
-	font-size: 35px;
-	padding: 20px 45px;
+.character-name {
+  text-align: center;
 }
 
-.you, .enemies {
-	clear: both;
+.character-health {
+  text-align: center;
 }
-.opponents {
-	height: 200px;
+
+.enemy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.target-enemy {
+  color: white;
+  background-color: black;
+}
+
+#selected-character {
+  width: 190px;
+  height: 160px;
+}
+
+#attacker {
+  width: 190px;
+  height: 160px;
+}
+
+#defender {
+  width: 190px;
+  height: 160px;
+}
+
+#defender-name {
+  text-align: center;
+}
+
+#defender-health {
+  text-align: center;
+}
+
+#choose-enemy-button {
+  visibility: hidden;
+}
+
+#restart-button {
+  visibility: hidden;
+}
+
+#turn-counter {
+  font-size: 150%;
 }
